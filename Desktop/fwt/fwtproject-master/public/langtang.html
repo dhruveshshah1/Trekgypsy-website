@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>LANGTANG TILMAN PASS</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,700,900|Display+Playfair:200,300,400,700"> 
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mediaelement@4.2.7/build/mediaelementplayer.min.css">
+
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        
+    // Handler for .load() called.
+    var data = {
+      location: 'lang'
+    };
+
+      $.getJSON('/api/reviewratingget', data ,function(result){
+        console.log("here1");
+        console.log(result);
+        $("#rating").empty();
+        $("#rating").append(result);
+      });
+
+
+      $.getJSON('/api/reviewsearchloc',data ,function(result){
+        console.log("here");
+        console.log(result);
+        $("#r_l1").empty();
+        $("#r_l1").append(result[0].a_review);
+        
+        counter = 1
+        jQuery(result).each(function(i, item){
+          var var_name1 = "#r" + counter;
+          console.log(item.a_review);
+          $(var_name1).empty();
+          $(var_name1).append(item.a_review);
+          counter+=1;
+        });
+
+      });
+
+
+
+
+      // $.getJSON('/api/reviewsearchloc',data,function(result){
+      //   console.log("here");
+      //   console.log(result[0]);
+      //   $("#r_l1").empty();
+      //   $("#r_l1").append(result[0].a_review);
+      //   // jQuery(result).each(function(i, item){
+      //   // console.log(item)
+        
+      //   // });
+      // });
+
+    });
+    </script>
+    
+  </head>
+  <body>
+  
+  <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+    <header class="site-navbar py-1" role="banner">
+
+      <div class="container">
+        <div class="row align-items-center">
+          
+          <div class="col-6 col-xl-2">
+            <h1 class="mb-0"><a href="welcome.html" class="text-black h2 mb-0">TREKGYPSY</a></h1>
+          </div>
+          <div class="col-10 col-md-10 d-none d-xl-block">
+            <nav class="site-navigation position-relative text-right text-lg-center" role="navigation">
+
+               <ul class="site-menu js-clone-nav mx-auto d-none d-lg-block">
+                <li class="active">
+                  <a href="welcome.html">Home</a>
+                </li>
+                <li class="has-children">
+                  <a href="#">Destinations</a>
+                  <ul class="dropdown">
+                    <li><a href="Gokyo.html">Gokyo Lake</a></li>
+                    <li><a href="limi.html">Limi</a></li>
+                    <li><a href="langtang.html">Langtang</a></li>
+                    <li><a href="everestbase.html">Everest Base Camp</a></li>
+                    <li><a href="KACHENJUNGA.html">Kachenjunga</a></li>
+                    
+              </ul>
+                </li>
+                <li><a href="booking.html">Bookings</a></li>
+                <li><a href="blog.html">All Blogs</a></li>
+                <li><a href="newblog.html">Your Blogs</a></li>
+                <li><a href="blogs.html">Write a Blog</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="/">Log Out</a></li>
+              </ul>
+            </nav>
+          </div>
+
+          
+
+            <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+
+          </div>
+
+        </div>
+      </div>
+      
+    </header>
+
+  
+
+   
+
+    <div class="slide-one-item home-slider owl-carousel">
+      
+      <div class="site-blocks-cover overlay" style="background-image: url(https://greathimalayatrails.com/wp-content/uploads/2016/02/Slider-1-Langtang-Alex-Treadway.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
+        <div class="container">
+          <div class="row align-items-center justify-content-center text-center">
+
+            <div class="col-md-8" data-aos="fade-up" data-aos-delay="400">
+              
+
+              <h1 class="text-white font-weight-light">LANGTANG TILMAN PASS</h1>
+              <p class="mb-5">ALTITUDE : 5308</p>
+              
+
+            </div>
+          </div>
+        </div>
+      </div>  
+
+      <div class="site-blocks-cover overlay" style="background-image: url(https://greathimalayatrails.com/wp-content/uploads/2016/02/Slider-3-Langtang-Richard-Bull.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
+        <div class="container">
+          <div class="row align-items-center justify-content-center text-center">
+
+            <div class="col-md-8" data-aos="fade-up" data-aos-delay="400">
+              <h1 class="text-white font-weight-light">LANGTANG TILMAN PASS</h1>
+              <p class="mb-5">6 DAYS</p>
+              
+            </div>
+          </div>
+        </div>
+      </div>  
+
+    </div>
+    
+
+
+    <div class="site-section">
+      
+      <div class="container overlap-section">
+        <div class="row">
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
+            <a href="#" class="unit-1 text-center">
+              <img src="images/img_2.jpg" alt="Image" class="img-fluid">
+              <div class="unit-1-text">
+                <h3 class="unit-1-heading">BLOGS</h3>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
+            <a href="#" class="unit-1 text-center">
+              <img src="images/img_1.jpg" alt="Image" class="img-fluid">
+              <div class="unit-1-text">
+                <h3 class="unit-1-heading">DISCOVER MORE</h3>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
+            <a href="#" class="unit-1 text-center">
+              <img src="images/img_3.jpg" alt="Image" class="img-fluid">
+              <div class="unit-1-text">
+                <h3 class="unit-1-heading">BOOKINGS</h3>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    
+    </div>
+
+<div align="center">
+      <h1><p>Travelor Rating:<span id="rating"></span> / 5</p></h1>
+      <p id="para">It’s possible to continue on your trek from the Everest region into Langtang & Helambu via Panch Pokhari and the glaciated 5308 m Tilman pass. The crossing of the pass is quite technical and involves the need of mountain equipment like ropes and crampons. Your efforts will be rewarded: the views from the pass are spectacular and you can see straight into Tibet. The descent from the pass takes you from gigantic glaciers to a very different world of alpine meadows and cheese factories.
+
+The trail continues through the Langtang Valley and the verdant gorge of the Langtang Khola. Rhododendrons blend into moss-hung pine trees and you’ll encounter occasional yaks trundling down pastures on their way home. Keep an eye out for Blue Poppy flowers, families of playful langur monkeys and the iridescent Impeyan pheasant, the national bird of Nepal.</p><br><br>
+      <h1 align="center">Been here? Recommend it to others!</h1>
+      <h3 align="center">Give your feedback</h3>
+    <center>
+      <form action="/api/reviewratingpost" method="POST">
+        <h4>
+        <input type="text" name="location" value="Gokyo" hidden>
+        <input type="radio" name="o" value="1" > <b>1</b> out of <b>5</b><br>
+        <input type="radio" name="o" value="2" > <b>2</b> out of <b>5</b><br>
+        <input type="radio" name="o" value="3" ><b>3</b> out of <b>5</b><br>
+        <input type="radio" name="o" value="4" checked> <b>4</b> out of <b>5</b><br>
+        <input type="radio" name="o" value="5" > <b>5</b> out of <b>5</b><br>
+      </h4>
+      <button class="btn waves-effect waves-light teal" type="submit" name="action">Submit</button>
+      </form></center> 
+    </div>
+
+    
+    <div class="site-section block-13 bg-light">
+  
+
+    <div class="container">
+        <div class="row justify-content-center mb-5">
+          <div class="col-md-7">
+            <h2 class="font-weight-light text-black text-center">Popular blogs</h2>
+          </div>
+        </div>
+
+        <div>
+
+          <div class="item">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-6 mb-5">
+                  <img src="images/img_1.jpg" alt="Image" class="img-md-fluid">
+                </div>
+                <div class="overlap-left col-lg-6 bg-white p-md-5 align-self-center">
+                  <p id = "r_l1" class="text-black lead" >&ldquo; boo1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique dolorem quisquam laudantium, incidunt id laborum, tempora aliquid labore minus. Nemo maxime, veniam! Fugiat odio nam eveniet ipsam atque, corrupti porro&rdquo;</p>
+                  <!-- <p class="">&mdash; <em>James Martin</em>, <a href="#">Traveler</a></p> -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        
+      </div>
+    </div>
+
+
+
+    <div class="site-section">
+      
+      <div class="container">
+        <div class="row justify-content-center mb-5">
+          <div class="col-md-7 text-center">
+            <h2 class="font-weight-light text-black">Iternary</h2>
+            <p class="color-black-opacity-5">Daywise Iternary</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
+            <a href="#" class="unit-1 text-center">
+              <img src="https://greathimalayatrails.com/wp-content/uploads/2016/02/Slider-2-Langtang-Alex-Treadway.jpg" alt="Image" class="img-fluid">
+              <div class="unit-1-text">
+                <strong class="text-primary mb-2 d-block">Day 1</strong>
+                <h3 class="unit-1-heading">Shotang khakra</h3>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
+            <a href="#" class="unit-1 text-center">
+              <img src="https://greathimalayatrails.com/wp-content/uploads/2016/02/Slider-2-Langtang-Alex-Treadway.jpg" alt="Image" class="img-fluid">
+              <div class="unit-1-text">
+                <strong class="text-primary mb-2 d-block">Day 2</strong>
+                <h3 class="unit-1-heading">Khyansin</h3>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
+            <a href="#" class="unit-1 text-center">
+              <img src="https://greathimalayatrails.com/wp-content/uploads/2016/02/Slider-2-Langtang-Alex-Treadway.jpg" alt="Image" class="img-fluid">
+              <div class="unit-1-text">
+                <strong class="text-primary mb-2 d-block">Day 3</strong>
+                <h3 class="unit-1-heading">Tin pokhri</h3>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
+            <a href="#" class="unit-1 text-center">
+              <img src="https://greathimalayatrails.com/wp-content/uploads/2016/02/Slider-2-Langtang-Alex-Treadway.jpg" alt="Image" class="img-fluid">
+              <div class="unit-1-text">
+                <strong class="text-primary mb-2 d-block">Day 4</strong>
+                <h3 class="unit-1-heading">Ghora</h3>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
+            <a href="#" class="unit-1 text-center">
+              <img src="https://greathimalayatrails.com/wp-content/uploads/2016/02/Slider-2-Langtang-Alex-Treadway.jpg" alt="Image" class="img-fluid">
+              <div class="unit-1-text">
+                <strong class="text-primary mb-2 d-block">Day 5</strong>
+                <h3 class="unit-1-heading">High camp</h3>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
+            <a href="#" class="unit-1 text-center">
+              <img src="https://greathimalayatrails.com/wp-content/uploads/2016/02/Slider-2-Langtang-Alex-Treadway.jpg" alt="Image" class="img-fluid">
+              <div class="unit-1-text">
+                <strong class="text-primary mb-2 d-block">Day 6</strong>
+                <h3 class="unit-1-heading">Syabru Besi</h3>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    
+    </div>
+
+    
+     
+
+    <div class="site-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5">
+          <div class="col-md-7 text-center">
+            <h2 class="font-weight-light text-black">More Blog</h2>
+            
+          </div>
+        </div>
+        <div class="row mb-3 align-items-stretch">
+          <div class="col-md-6 col-lg-6 mb-4 mb-lg-4">
+            <div class="h-entry">
+              <img src="images/hero_bg_1.jpg" alt="Image" class="img-fluid">
+              <h2 class="font-size-regular"><a href="#">How to Plan Your Vacation</a></h2>
+              <div class="meta mb-4">by Theresa Winston <span class="mx-2">&bullet;</span> Jan 18, 2019 at 2:00 pm <span class="mx-2">&bullet;</span> <a href="#">News</a></div>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi nobis ea maiores sapiente veritatis reprehenderit suscipit quaerat rerum voluptatibus a eius.</p>
+            </div> 
+          </div>
+          <div class="col-md-6 col-lg-6 mb-4 mb-lg-4">
+            <div class="h-entry">
+              <img src="images/hero_bg_2.jpg" alt="Image" class="img-fluid">
+              <h2 class="font-size-regular"><a href="#">How to Plan Your Vacation</a></h2>
+              <div class="meta mb-4">by Theresa Winston <span class="mx-2">&bullet;</span> Jan 18, 2019 at 2:00 pm <span class="mx-2">&bullet;</span> <a href="#">News</a></div>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi nobis ea maiores sapiente veritatis reprehenderit suscipit quaerat rerum voluptatibus a eius.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 text-center">
+            <a href="#" class="btn btn-outline-primary border-2 py-3 px-5">View All Blog Posts</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="site-section border-top">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-md-12">
+            <h2 class="mb-5 text-black">Want To Travel With Us?</h2>
+            <p class="mb-0"><a href="booking.html" class="btn btn-primary py-3 px-5 text-white">Book Now</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="mb-5">
+              <h3 class="footer-heading mb-4">About Trekgypsy</h3>
+              <p>We provide the best travel experience and also give you the most honest and trusted blogs!</p>
+            </div>
+
+            
+            
+          </div>
+          <div class="col-lg-4 mb-5 mb-lg-0">
+            <div class="row mb-5">
+              <div class="col-md-12">
+                <h3 class="footer-heading mb-4" id="head3">Navigations</h3>
+              </div>
+              <div class="col-md-6 col-lg-6" id="nav1">
+                <ul class="list-unstyled">
+                  <li><a href="welcome.html">Home</a></li>
+                  <li><a href="blog.html">All Blogs</a></li>
+                  <li><a href="blogs.html">Write A Blog</a></li>
+                
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-6" id="nav2">
+                <ul class="list-unstyled">
+                  <li><a href="booking.html">Bookings</a></li>
+                 <!--  <li><a href="#"></a></li> -->
+                  <li><a href="about.html">About Us</a></li>
+                  
+                </ul>
+              </div>
+            </div>
+
+            
+
+          </div>
+
+         
+           
+
+           
+
+             
+                    
+                  </div>
+                </div>
+              </form>
+
+            </div>
+
+          </div>
+          
+        </div>
+      
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/jquery.countdown.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/bootstrap-datepicker.min.js"></script>
+  <script src="js/aos.js"></script>
+
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>

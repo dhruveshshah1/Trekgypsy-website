@@ -1,0 +1,133 @@
+body{
+    background-image: url("login.jpg");
+    height:100%;
+    width:100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: ;
+    position: fixed;
+    top: 0;
+    left: 0;
+    font: 13px/22px Helvetica;
+
+}
+
+
+h1 {
+    font-family: Times New Roman;
+    color: white;
+    font-size: 80px;
+    position: fixed;
+    bottom: 50%;    
+    right: 30%;
+}
+
+h2 {
+    font-family: Times New Roman;
+    color: white;
+    font-size: 25px;
+    position: fixed;
+    right: 32%;
+    top: 47%
+}
+
+body {
+    font: 13px/22px Helvetica;
+
+
+}
+.buttons {
+    overflow: hidden;
+}
+
+.buttons > div {
+    width: calc(50% - 40px);
+    padding: 70px;
+    float: left;
+    position: fixed;
+    bottom: 0;
+    top: 0;
+
+}
+.buttons .dark {
+    
+    left: 45%;
+    bottom: 50%;
+    top: 50%;
+    right: 50%;
+}
+.buttons a {
+    float: left; 
+    margin-right: 20px;
+  margin-bottom: 20px;
+}
+a#link {position: absolute; left: 20px; bottom: 10px; text-decoration: none; color: #555; font-weight: bold;}
+/*------------------------------------------------------*/
+/* BUTTONS */
+/*------------------------------------------------------*/
+.btn,
+input[type="submit"]{
+    cursor: pointer;
+    border-radius: 0px;
+    text-decoration: none;
+    padding: 12px 18px;
+    font-size: 12px;
+    line-height: 19px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif; font-weight:400;
+    letter-spacing: 3px;
+    -webkit-transition: all .4s ease-in-out;
+       -moz-transition: all .4s ease-in-out;
+        -ms-transition: all .4s ease-in-out;
+         -o-transition: all .4s ease-in-out;
+            transition: all .4s ease-in-out;
+}
+
+.btn-mid {
+    border-radius: 0px;
+    text-decoration: none;
+    padding: 14px 21px;
+    font-size: 13px;
+    line-height: 25px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif; font-weight:400;
+    letter-spacing: 3px;
+    -webkit-transition: all .4s ease-in-out;
+       -moz-transition: all .4s ease-in-out;
+        -ms-transition: all .4s ease-in-out;
+         -o-transition: all .4s ease-in-out;
+            transition: all .4s ease-in-out;
+}
+
+
+.btn:hover,
+input[type="submit"]:hover{
+    -webkit-transition: all .4s ease-in-out;
+       -moz-transition: all .4s ease-in-out;
+        -ms-transition: all .4s ease-in-out;
+         -o-transition: all .4s ease-in-out;
+            transition: all .4s ease-in-out;
+}
+.btn-white{
+    border:solid 2px #fff;
+    background: transparent;
+    color: #fff !important;
+}
+.btn-white:hover{
+    border:solid 2px #fff;
+    background: #fff;
+    color: #1f1f1f !important;
+}
+
+
+
+.btn-color{
+    background: transparent;
+}
+.btn-color:hover{
+    color: #fff;
+}
+
+
+
+

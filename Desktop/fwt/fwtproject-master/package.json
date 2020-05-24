@@ -1,0 +1,33 @@
+{
+  "name": "trek",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chinmayshah99/fwtproject.git"
+  },
+  "author": "cs",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chinmayshah99/fwtproject/issues"
+  },
+  "homepage": "https://github.com/chinmayshah99/fwtproject#readme",
+  "dependencies": {
+    "bcrypt": "^3.0.5",
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.18.3",
+    "cookie-parser": "^1.4.4",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "express-session": "^1.15.6",
+    "expression-parser": "^1.0.0",
+    "mongoose": "^5.4.19",
+    "nodemon": "^1.18.10"
+  }
+}

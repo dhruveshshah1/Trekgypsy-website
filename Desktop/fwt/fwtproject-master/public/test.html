@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        
+    // Handler for .load() called.
+    var data = {
+      location: 'l2'
+    };
+
+      $.getJSON('/api/reviewsearchloc',data ,function(result){
+        console.log("here");
+        console.log(result);
+        
+        jQuery(result).each(function(i, item){
+        $('#test').append(item._id + ': ' + item.location);
+        });
+      });
+
+    });
+    </script>
+
+
+    
+</head>
+<body>
+	<form action="/api/signup" method="POST">
+        <h3 class="teal-text" align="center">Sign Up</h3>
+        <p id = 'test'>something</p> 
+            <input name = "first" id="first_name" type="text" class="validate">
+            <label for="first_name">First Name</label>
+            <input name = "last" id="last_name" type="text" class="validate">
+            <label for="last_name">Last Name</label>
+                      <button class="btn waves-effect waves-light teal" type="submit" id = 'yes_finally' name="action" >Submit</button>
+        </center>
+      </div>
+	</form>
+  
+</body>
+</html>
